@@ -1,4 +1,6 @@
-#  Find a missing number in a string of 1 to n numbers.
+# Problem: Find a missing number in a string of 1 to n numbers.
+
+
 # I take in the n of the n numbers, and the string of the numbers 1 -n
 # The script splits the string on the whitespace, and places each number into its
 # own index in an array. To find the missing number, the script goes through the array 

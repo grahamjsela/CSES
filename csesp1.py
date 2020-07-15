@@ -1,3 +1,8 @@
+# Problem: Consider an algorithm that takes as input a positive integer n. 
+# If n is even, the algorithm divides it by two, and if n is odd, 
+# the algorithm multiplies it by three and adds one. The algorithm repeats this, 
+# until n is one.
+
 #Very simple python script
 # Takes an input, and checks to see if it is = to 1
 # if it is, it prints 1 then ends the program.
