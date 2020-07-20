@@ -5,6 +5,11 @@
 # On each turn, you may increase the value of any element by one. 
 # What is the minimum number of turns required?
 
+# My solution goes through the array once to save on time. The solution 
+# goes through the array individually and takes the largest number before it
+# and adds that to a variable that stores how many total turns it will take.
+# Each step the algorithm checks to see if it is using the largest number then
+# the algorithm increases the count if it needs to.
 def main():
     n = int(input())
 
@@ -12,29 +17,22 @@ def main():
 
 
     i = 0
-    max = 0
-    temp = 0
+    count = 0
     
+    max = 0
 
-    if n == 0:
+    for i in range(n):
 
-        print(0)
-        return
+        if arr[i] > max:
+            max = arr[i]
 
-    while(i < n - 1):
+        if arr[i] < max:
+            count = count + max - arr[i]
 
-        if (arr[i + 1] < arr[i]):
-
-            temp = arr[i] - arr[i + 1] + 1
-
-            if temp > max:
-
-                max = temp
-
-        temp = 0
-        i = i + 1
-
-    print(max)
+    print(count)
+            
+        
+        
 
     
 
